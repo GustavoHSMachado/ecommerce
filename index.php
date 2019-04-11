@@ -27,7 +27,7 @@
 	
 	$app->get('/admin', function() { //chmando as rotas para chamar a pagina do administrador
 		
-		User::verifyLogin(); // usando método criado na Classe User para verificar se o usuario logou mesmo. 
+		User::verifyLogin(); // usando constante para chamar método criado na Classe User para verificar se o usuario logou mesmo. 
 		
 		$page = new PageAdmin(); // carregar o header
 
@@ -50,7 +50,7 @@
 	
 	$app->post('/admin/login', function() {
 
-		User::login($_POST["deslogin"], $_POST["despassword"]); //chamando o metodo para conferir se o login e senha existe, criado ma User.php.
+		User::login($_POST["deslogin"], $_POST["despassword"]); //chamando o metodo para conferir se o login e senha existe, criado na User.php.
 
 		header("Location: /admin"); //se ele existir ele manda para pagina admin.
 		exit;
