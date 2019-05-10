@@ -50,7 +50,7 @@
 		//Passa o retorno do atributo values desta classe, ele não é acessado direto porque não é um boa pratica. \\
 		public function getValues() { 
 
-			return $this->values;
+			return $this -> values;
 
 		}
 
