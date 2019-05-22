@@ -3,7 +3,6 @@
 	session_start(); //Para usar o login tem que usar sessão, aqui estou iniciando a sessão.
 		
 	require_once("vendor/autoload.php"); // o composer e trazer suas dependencias.
-	//require_once("functions.php");
 	
 	/* OS "namespaces" */
 	use \Slim\Slim; 
@@ -14,6 +13,7 @@
 	
 	// Chamando as rotas \\
 	require_once("site.php");
+	require_once("functions.php");
 	require_once("admin.php");
 	require_once("admin-users.php");
 	require_once("admin-categories.php");
