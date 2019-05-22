@@ -2,8 +2,8 @@
 
 	/* OS "namespaces" */
 	use \Hcode\PageAdmin;
-	use Hcode\Model\User;
-	use Hcode\Model\Category;
+	use \Hcode\Model\User;
+	use \Hcode\Model\Category;
 	
 	$app -> get('/admin/categories', function(){
 		

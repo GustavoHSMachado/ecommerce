@@ -2,8 +2,8 @@
 
 	/* OS "namespaces" */
 	use \Hcode\PageAdmin;
-	use Hcode\Model\User;
-	use Hcode\Model\Product;
+	use \Hcode\Model\User;
+	use \Hcode\Model\Product;
 	
 	$app -> get('/admin/products', function(){
 		
@@ -60,7 +60,7 @@
 	
 	});
 	
-	$app -> post('/admin/product/:idproduct', function($idproduct){
+	$app -> post('/admin/products/:idproduct', function($idproduct){
 		
 		User::verifyLogin();
 		

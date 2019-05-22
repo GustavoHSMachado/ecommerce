@@ -2,7 +2,7 @@
 
 	/* OS "namespaces" */
 	use \Hcode\PageAdmin;
-	use Hcode\Model\User;
+	use \Hcode\Model\User;
 	
 	$app -> get('/admin/users', function() {
 	
